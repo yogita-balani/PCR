@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\kbala\Desktop\BE Project\Lets-Chat\LetsChat\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="3482e6f614e87719821eb3b61e7644572eef5bef">
+        <dex dex="C:\Users\kbala\Desktop\BE Project\Lets-Chat\LetsChat\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6369c149bf8ee878f98df7fa53c02ea17e73655f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kbala\Desktop\BE Project\Lets-Chat\LetsChat\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="C:\Users\kbala\Desktop\BE Project\Lets-Chat\LetsChat\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8356dcd0e562abea088a784ce91b5fd40509d5dd\classes.dex" />
+    </item>
+
+</items>

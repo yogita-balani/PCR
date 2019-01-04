@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\4c43d367f7c2d57be98db7d177cbe24be2d61449\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\tooltip_enter.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\tooltip_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\4c43d367f7c2d57be98db7d177cbe24be2d61449\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\tooltip_exit.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\tooltip_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\kbala\\.android\\build-cache\\8fd8d2b292f125e0624de556596214f2b27c1f7e\\output\\res\\anim\\abc_popup_exit.xml"
+    }
+]

@@ -1,0 +1,7 @@
+#Fri Jan 04 19:24:34 IST 2019
+base.0=C\:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6369c149bf8ee878f98df7fa53c02ea17e73655f
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8356dcd0e562abea088a784ce91b5fd40509d5dd\\classes.dex
+base.1=C\:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8356dcd0e562abea088a784ce91b5fd40509d5dd
+file.0=C\:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6369c149bf8ee878f98df7fa53c02ea17e73655f\\classes.dex
