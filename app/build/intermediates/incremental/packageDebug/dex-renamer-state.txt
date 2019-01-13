@@ -1,4 +1,4 @@
-#Fri Jan 04 19:24:34 IST 2019
+#Sat Jan 12 17:05:44 IST 2019
 base.0=C\:\\Users\\kbala\\Desktop\\BE Project\\Lets-Chat\\LetsChat\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6369c149bf8ee878f98df7fa53c02ea17e73655f
 renamed.1=classes2.dex
 renamed.0=classes.dex

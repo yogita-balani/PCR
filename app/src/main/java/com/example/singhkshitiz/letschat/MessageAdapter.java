@@ -42,6 +42,11 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     DatabaseReference mDatabaseReference ;
     Context context;
     TextToSpeech tts;
+    String temp,temp1;
+    Messages m1;
+    long mesPos;
+    String name;
+
 
     //-----GETTING LIST OF ALL MESSAGES FROM CHAT ACTIVITY ----
     public MessageAdapter(List<Messages> mMessagesList) {
@@ -81,7 +86,30 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
 
             context = itemView.getContext();
+            tts = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
+                @Override
+                public void onInit(int i) {
+                    if(i!= TextToSpeech.ERROR)
+                    {
+                        tts.setLanguage(Locale.UK);
+                    }
+                }
+            });
 
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mesPos = getAdapterPosition();
+                    String mesId = mMessagesList.get((int)mesPos).toString();
+                    String n1 = displayName.getText().toString();
+
+
+                    tts.speak(n1 + " says "+ mMessagesList.get((int)mesPos).getMessage(), TextToSpeech.QUEUE_FLUSH, null);
+                    Toast.makeText(context, "hi "+ mMessagesList.get((int)mesPos).getMessage(), Toast.LENGTH_SHORT).show();
+
+                }
+            });
 
 
             //---DELETE FUNCTION---
@@ -92,6 +120,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
                     CharSequence options[] = new CharSequence[]{ "Delete","Cancel" };
                     AlertDialog.Builder builder = new AlertDialog.Builder(context);
                     builder.setTitle("Delete this message");
+
                     builder.setItems(options,new AlertDialog.OnClickListener(){
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -100,10 +129,14 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
                                 /*
                                         ....CODE FOR DELETING THE MESSAGE IS YET TO BE WRITTEN HERE...
                                  */
-                                long mesPos = getAdapterPosition();
+                                 mesPos = getAdapterPosition();
+
                                 String mesId = mMessagesList.get((int)mesPos).toString();
                                 Log.e("Message Id is ", mesId);
                                 Log.e("Message is : ",mMessagesList.get((int)mesPos).getMessage());
+                                //temp1="hi "+ mMessagesList.get((int)mesPos).getMessage();
+                                tts.speak("hi "+ mMessagesList.get((int)mesPos).getMessage(), TextToSpeech.QUEUE_FLUSH, null);
+                                Toast.makeText(context, "hi "+ mMessagesList.get((int)mesPos).getMessage(), Toast.LENGTH_SHORT).show();
 
                             }
 
@@ -127,13 +160,13 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
     //----SETTING EACH HOLDER WITH DATA----
     @Override
-    public void onBindViewHolder(final MessageViewHolder holder, int position) {
+    public void onBindViewHolder(final MessageViewHolder holder , int position) {
 
 
        // String current_user_id = mAuth.getCurrentUser().getUid();
         Messages mes = mMessagesList.get(position);
         String from_user_id = mes.getFrom();
-
+        temp = temp1;
         //----CHANGING TIMESTAMP TO TIME-----
 
         long timeStamp = mes.getTime();
@@ -151,7 +184,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         mDatabaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String name = dataSnapshot.child("name").getValue().toString();
+                name = dataSnapshot.child("name").getValue().toString();
                 String image = dataSnapshot.child("thumb_image").getValue().toString();
 
 
@@ -165,6 +198,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
             }
         });
+
+
         holder.messageText.setText(mes.getMessage());
 
 

@@ -9,6 +9,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
@@ -35,6 +37,8 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
+import java.util.Locale;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
@@ -52,6 +56,8 @@ public class ChatFragment extends Fragment {
     private String mCurrent_user_id;
 
     private View mMainView;
+    boolean twice;
+    TextToSpeech tts;
 
     public ChatFragment() {
         // Required empty public constructor
@@ -151,6 +157,14 @@ public class ChatFragment extends Fragment {
                     }
                 });
 
+                tts = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
+                    @Override
+                    public void onInit(int i) {
+                        if(i!=TextToSpeech.ERROR)
+                            tts.setLanguage(Locale.UK);
+                    }
+                });
+
                 //---ADDING NAME , IMAGE, ONLINE FEATURE , AND OPENING CHAT ACTIVITY ON CLICK----
                 mUsersDatabase.child(list_user_id).addValueEventListener(new ValueEventListener() {
                     @Override
@@ -169,14 +183,33 @@ public class ChatFragment extends Fragment {
                         convViewHolder.setUserImage(userThumb,getContext());
 
                         //--OPENING CHAT ACTIVITY FOR CLICKED USER----
+
+
                         convViewHolder.mView.setOnClickListener(new View.OnClickListener() {
                             @Override
-                            public void onClick(View v) {
-
+                            public void onClick(View v)
+                            {
+                                if(twice == true){
                                 Intent chatIntent = new Intent(getContext(),ChatActivity.class);
                                 chatIntent.putExtra("user_id",list_user_id);
                                 chatIntent.putExtra("user_name",userName);
                                 startActivity(chatIntent);
+                                }
+
+                                else
+                                {
+                                    twice = true;
+                                    tts.speak("Hello", TextToSpeech.QUEUE_FLUSH, null);
+                                }
+
+                                new Handler().postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        twice = false;
+
+                                    }
+                                },2000);
+
                             }
                         });
                     }
